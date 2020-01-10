@@ -1,6 +1,5 @@
 // SUM OF ELEMENTS OF AN ARRAY
 #include<stdio.h>
-void swap (int,int)
 int main()
 {
     int a[5],i,sum=0,x;
@@ -12,17 +11,17 @@ int main()
     }
     printf("Sum of element of given array=%d\n",sum);
 
+    int p[3],q,sum_array=0;
+    printf("Enter an array\n");
+    for(int j=0;j<4;j++)
+    {
+        scanf("%d",&p[j]);
+        q=p[j];
+        sum_array+=q;
+    }
+    printf("Sum=%d",sum_array);
 }
-	void swap(int,int);
-{
-	  int a,b;
-	  a=10;
-	  b=20;
-	  swap(a,b);
-	  printf("a=%d,b=%d\n",a,b);	  return 0;
-	}
-	void swap(int x,int y) {
-  int t=x;
-	  x=y;
-	  y=t;
-	}
+
+
+
+
